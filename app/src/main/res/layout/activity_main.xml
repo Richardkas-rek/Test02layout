@@ -156,8 +156,10 @@
         android:id="@+id/imageView6"
         android:layout_width="45dp"
         android:layout_height="45dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        tools:layout_editor_absoluteY="379dp"
+        app:layout_constraintStart_toEndOf="@id/myVerticalBarrier"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -169,28 +171,31 @@
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/myVerticalBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="tatnemText1,trxtvirw_movieName" />
+
     <TextView
         android:id="@+id/trxtvirw_movieName"
-        android:layout_width="159dp"
-        android:layout_height="29dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Back to the Future I"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Fusue I"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster" />
 
     <TextView
         android:id="@+id/tatnemText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:layout_marginTop="12dp"
+        android:text="kfuhvdksic dk"
         app:layout_constraintStart_toStartOf="@+id/trxtvirw_movieName"
         app:layout_constraintTop_toBottomOf="@+id/trxtvirw_movieName" />
-
-    <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
